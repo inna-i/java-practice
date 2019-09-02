@@ -2,13 +2,9 @@ package com.globallogic.arrays;
 
 import java.util.Arrays;
 import java.util.DoubleSummaryStatistics;
-import java.util.List;
-import java.util.function.DoubleConsumer;
 import java.util.stream.Collectors;
 
 public class ArraysTasks {
-
-
     /*
     Increase by 2
         The sequence of integers is given. Increase by 2 each its non-negative element.
