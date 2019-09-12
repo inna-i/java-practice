@@ -28,6 +28,6 @@ public class EthernetAdapter extends Device {
 
     @Override
     public String toString() {
-        return super.toString() + " mac = " + mac + ", speed = " + speed;
+        return super.toString() + ", mac = " + mac + ", speed = " + speed;
     }
 }
