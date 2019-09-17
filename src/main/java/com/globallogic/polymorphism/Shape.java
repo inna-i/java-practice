@@ -12,7 +12,7 @@ public class Shape {
     }
 
     public String printArea(){
-        return "Shape area is " + calcArea();
+        return getClass().getSimpleName() + " area is " + calcArea();
     }
 
     @Override

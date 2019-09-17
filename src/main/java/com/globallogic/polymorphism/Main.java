@@ -1,5 +1,7 @@
 package com.globallogic.polymorphism;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         double sumCircleArea = 0;
@@ -20,9 +22,9 @@ public class Main {
 
         Shape[] shapes = {
             new Circle("green", 10),
-            new Circle("green", 11),
+//            new Circle("green", 11),
             new Rectangle("red", 11, 11.5),
-            new Triangle("black", 5, 5, 5),
+//            new Triangle("black", 5, 5, 5),
             new Triangle("blue", 5, 5, 5),
         };
 
@@ -35,9 +37,13 @@ public class Main {
                 sumTriangleArea += shape.calcArea();
             }
 
-            System.out.println(shape);
+//            System.out.println(shape);
             System.out.println(shape.printArea());
         }
+
+        Arrays.asList(shapes)
+            .sort((a, b) -> a.calcArea() > b.calcArea() ? 0 : -1);
+        System.out.println(Arrays.toString(shapes));
 
         System.out.println("Rectangles total area: " + sumRectArea
                 + " Circle total area: " +  sumCircleArea + " Triangle total area: " + sumTriangleArea
