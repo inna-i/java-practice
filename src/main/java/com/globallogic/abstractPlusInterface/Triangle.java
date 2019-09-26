@@ -1,7 +1,7 @@
 package com.globallogic.abstractPlusInterface;
 
 
-public class Triangle extends Shape implements Comparable {
+public class Triangle extends Shape {
 
     private double a;
     private double b;
@@ -18,18 +18,6 @@ public class Triangle extends Shape implements Comparable {
     public double calcArea() {
         double s = (a + b + c)/2;
         return Math.sqrt(s*(s - a)*(s - b)*(s - c));
-    }
-
-    @Override
-    public int compareTo(Object o) {
-        Triangle triangle = (Triangle) o;
-        if (this.calcArea() > triangle.calcArea()) {
-            return 1;
-        } else if (this.calcArea() < triangle.calcArea()) {
-            return -1;
-        }
-
-        return 0;
     }
 
     @Override

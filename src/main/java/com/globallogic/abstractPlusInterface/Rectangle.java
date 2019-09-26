@@ -1,6 +1,6 @@
 package com.globallogic.abstractPlusInterface;
 
-public class Rectangle extends Shape implements Comparable {
+public class Rectangle extends Shape {
     private double width;
     private double height;
 
@@ -17,7 +17,6 @@ public class Rectangle extends Shape implements Comparable {
 
     @Override
     public int compareTo(Object o) {
-        System.out.println("compare this" + this + " with " + o );
         Rectangle rectangle = (Rectangle) o;
         if (this.calcArea() > rectangle.calcArea()) {
             return 1;
