@@ -22,7 +22,7 @@ public class Main {
 
         Ship.Engine engine = ship.new Engine();
 
-        engine.doJob();
+        System.out.println(engine.doJob());
 
     }
 }
