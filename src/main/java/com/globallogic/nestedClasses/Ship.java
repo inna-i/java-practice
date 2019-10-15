@@ -5,8 +5,8 @@ public class Ship {
         System.out.println("Ship");
     }
     protected class Engine {
-        void doJob() {
-            System.out.println("Engine");
+        String doJob() {
+            return "Engine";
         }
         public void test() {
             Ship.this.doJob(); //prints Ship
