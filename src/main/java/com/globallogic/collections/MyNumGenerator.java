@@ -13,12 +13,12 @@ public class MyNumGenerator {
         this.maxNum = max;
     }
 
-    void generate() {
+    List<Integer> generate() {
         for(int i=0; i < numOfElm; i++) {
             int randomNum = 1 + (int)(Math.random() * maxNum);
             list.add(randomNum);
         }
 
-        System.out.println(list.toString());
+        return list;
     }
 }
